@@ -1,0 +1,186 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/GTCrypto_banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  height: 100vh;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.06s ease;
+}
+
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo img {
+  float: left;
+  width: 100px;
+  height: auto;
+  animation: rodar 4s infinite;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.titulo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  text-align: center;
+  color: #fff;
+}
+
+.titulo h1 {
+  color: #fff;
+  font-size: 70px;
+}
+
+.menu {
+  position: relative;
+}
+.menu_Crypto {
+  position: relative;
+  display: inline-block;
+}
+
+.menu_Crypto hover .botao_Crypto {
+  background-color: #3e8e41;
+}
+
+.botao_Crypto {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+}
+
+.botao_Crypto:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu_Crypto:hover .menu_Crypto-conteudo {
+  display: block;
+}
+
+.menu_Crypto-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 134px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  text-align: center;
+}
+
+.menu_Crypto-conteudo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu_Crypto-conteudo a:hover {
+  background-color: #ddd;
+}
+
+.botao_sobre {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.06s ease;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.botao_sobre:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.sobre {
+  height: 75vh;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imagem {
+  height: 70px;
+  width: 70px;
+  background: url(../img/GTCrypto_logo.png);
+  border-radius: 50px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sobre h1 {
+  color: white;
+}
+.footer {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.esq {
+  float: left;
+}
+
+.dir {
+  float: right;
+}
